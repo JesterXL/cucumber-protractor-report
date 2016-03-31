@@ -1,0 +1,51 @@
+<div class="mdl-layout mdl-js-layout">
+
+	<main class="mdl-layout__content">
+
+		<form novalidate role="form" name="form">
+			<div class="mdl-grid" ng-show="vm.hasError">
+				<div class="mdl-cell mdl-cell--12-col">
+					<h6 style="color: #FF0000;">{{vm.lastError}}</h6>
+				</div>
+			</div>
+
+			<div class="mdl-grid">
+
+				<div class="mdl-cell mdl-cell--4-col">
+
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input" type="text" id="username"ng-model="vm.username">
+						<label class="mdl-textfield__label" for="username">Username</label>
+					</div>
+
+				</div>
+
+
+				<div class="mdl-cell mdl-cell--4-col">
+
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input" type="password" id="password"
+						ng-model="vm.password">
+						<label class="mdl-textfield__label" for="password">Password</label>
+					</div>	
+
+				</div>
+
+				<div class="mdl-cell mdl-cell--4-col">
+					<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent"
+					ng-click="vm.login()">Login</button>
+				</div>
+			</div>
+
+		</form>
+
+<!--
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet">Content</div>
+  <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet">goes</div>
+  <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet">here</div>
+</div>
+-->
+	</main>
+
+</div>

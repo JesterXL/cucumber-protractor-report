@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feature Report</title>
+
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<link rel="stylesheet" href="node_modules/material-design-lite/dist/material.indigo-pink.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<style>
+a{
+	text-decoration: underline;
+}
+a,
+a label {
+    cursor: pointer;
+}
+</style>
+
+</head>
+<body ng-app="featureReport">
+
+<jxl-feature-report></jxl-feature-report>
+
+<!-- libraries -->
+<script src="node_modules/material-design-lite/material.min.js"></script>
+<script src="node_modules/angular/angular.min.js"></script>
+<script src="node_modules/lodash/lodash.min.js"></script>
+<script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="node_modules/moment/min/moment.min.js"></script>
+
+<!-- source code -->
+<script src="featureReport/featureReport.module.js"></script>
+<script src="featureReport/featureReport.controller.js"></script>
+<script src="featureReport/featureReport.directive.js"></script>
+
+<script src="featureReport/features.factory.js"></script>
+<script src="featureReport/testTime.formatter.js"></script>
+
+<script src="featureReport/featureTable/featureTable.controller.js"></script>
+<script src="featureReport/featureTable/featureTable.directive.js"></script>
+
+<script src="featureReport/progress/progress.directive.js"></script>
+
+<script src="featureReport/scenarioTable/scenarioTable.controller.js"></script>
+<script src="featureReport/scenarioTable/scenarioTable.directive.js"></script>
+
+
+
+</body>
+</html>

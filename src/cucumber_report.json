@@ -1,0 +1,52 @@
+[
+  {
+    "id": "Login",
+    "name": "Login",
+    "description": "",
+    "line": 1,
+    "keyword": "Feature",
+    "uri": "/Users/jessewarden/Documents/_Projects/cucumber-protractor-report/demo/features/login.feature",
+    "elements": [
+      {
+        "name": "test login works",
+        "id": "Login;test-login-works",
+        "line": 3,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "name": "I go to login",
+            "line": 4,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 648212052
+            },
+            "match": {}
+          },
+          {
+            "name": "I use \"test\" as the username and \"test\" as the password",
+            "line": 5,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 298103439
+            },
+            "match": {}
+          },
+          {
+            "name": "I should see my workout",
+            "line": 6,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 174227259
+            },
+            "match": {}
+          }
+        ]
+      }
+    ]
+  }
+]

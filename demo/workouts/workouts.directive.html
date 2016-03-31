@@ -1,0 +1,18 @@
+<div class="mdl-layout mdl-js-layout">
+
+	<main class="mdl-layout__content">
+
+			<div class="mdl-grid">
+
+				<div class="mdl-cell mdl-cell--4-col" ng-repeat="exercise in vm.exercises">
+
+					<jxl-workout-card exercise="exercise" ng-click="vm.onClick(exercise)"></jxl-workout-card>
+
+				</div>
+
+			</div>
+
+
+	</main>
+
+</div>

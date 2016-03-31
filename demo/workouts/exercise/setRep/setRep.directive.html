@@ -1,0 +1,60 @@
+
+<style>
+.setRep-card-wide.mdl-card {
+  width: 260px;
+}
+.setRep-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 320px;
+}
+.setRep-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+</style>
+
+<div class="setRep-card-wide mdl-card mdl-shadow--2dp">
+
+	<div style="padding: 12px;">
+	
+		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="reps"ng-model="vm.set.reps" ng-disabled="vm.workoutComplete">
+			<label class="mdl-textfield__label" for="reps">Goal: {{vm.exercise.targetRepsPerSet}} reps</label>
+			<span class="mdl-textfield__error">Input is not a number!</span>
+		</div>
+
+		<!-- <div class="mdl-layout-spacer"></div> -->
+
+		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			<input class="mdl-textfield__input" pattern="-?[0-9]*(\.[0-9]+)?" type="text" id="pounds"
+		ng-model="vm.set.weight" ng-disabled="vm.workoutComplete">
+			<label class="mdl-textfield__label" for="pounds">Goal: {{vm.exercise.targetWeight}} lbs</label>
+			<span class="mdl-textfield__error">Input is not a number!</span>
+		</div>
+	</div>
+<!-- 
+  <div class="mdl-card__supporting-text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Mauris sagittis pellentesque lacus eleifend lacinia...
+  </div> -->
+  <div class="mdl-card__actions mdl-card--border">
+    <!-- frikin' MDL drives me CRAY! Their components are all confused... -->
+    <!--
+    Completed:
+  	 <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+	  <input type="checkbox" id="switch-1" class="mdl-switch__input" ng-model="vm.workoutComplete" ng-checked="vm.workoutComplete">
+	  <span class="mdl-switch__label"></span>
+	</label> -->
+
+	<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+		<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" ng-checked="vm.workoutComplete" ng-model="vm.workoutComplete">
+		<span class="mdl-checkbox__label">Completed</span>
+	</label>
+
+  </div>
+  <div class="mdl-card__menu">
+    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"
+    ng-click="vm.onDeleteSet()">
+      <i class="material-icons" style="color: #cc0000;">delete</i>
+    </button>
+  </div>
+</div>

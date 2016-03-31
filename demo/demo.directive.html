@@ -1,0 +1,21 @@
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+	<header class="mdl-layout__header">
+		<div class="mdl-layout__header-row">
+		<span>&nbsp;</span>
+			<!-- Title -->
+			<span class="mdl-layout-title" ng-show="vm.main">{{vm.title}}</span>
+			<a class="mdl-layout-title" ui-sref="workouts" ng-hide="vm.main">{{vm.title}}</a><span class="mdl-layout-title" ng-hide="vm.main"> &gt; {{vm.subTitle}}</span>
+			<div class="mdl-layout-spacer"></div>
+		</div>
+	</header>
+	
+	<main class="mdl-layout__content">
+		<div class="page-content">
+
+			<div class="mdl-grid">
+				<div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet" ui-view>
+				</div>
+			</div>
+		</div>
+	</main>
+</div>

@@ -1,0 +1,51 @@
+{
+  "name": "cucumber-protractor-report",
+  "version": "1.0.0",
+  "description": "Shows report of which features pass or fail as well as which scenario statements pass or fail from running Angular's Protractor via Cucumber.",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JesterXL/cucumber-protractor-report.git"
+  },
+  "keywords": [
+    "cucumber",
+    "gherkin",
+    "cuke",
+    "protractor",
+    "angular",
+    "selenium",
+    "endtoend",
+    "report",
+    "e2e",
+    "javascript"
+  ],
+  "author": "Jesse Warden",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JesterXL/cucumber-protractor-report/issues"
+  },
+  "homepage": "https://github.com/JesterXL/cucumber-protractor-report#readme",
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-ui-router": "^0.2.18",
+    "cucumber": "^0.9.5",
+    "gulp": "^3.9.1",
+    "lodash": "^4.6.1",
+    "material-design-lite": "^1.1.3",
+    "moment": "^2.12.0",
+    "protractor": "^3.2.2",
+    "protractor-cucumber-framework": "^0.3.4"
+  },
+  "devDependencies": {
+    "express": "^4.13.4",
+    "gulp-protractor": "^2.2.0",
+    "restify": "^4.0.4",
+    "chai": "^3.5.0"
+  }
+}

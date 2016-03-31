@@ -1,0 +1,22 @@
+
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--4-col" ng-repeat="set in vm.currentExercise.sets">
+  	<jxl-set-rep exercise="vm.currentExercise" set="set"></jxl-set-rep>
+  </div>
+	
+  </div>
+</div>
+
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--10-col">
+  </div>
+  <div class="mdl-cell mdl-cell--1-col"></div>
+  <div class="mdl-cell mdl-cell--1-col">
+	<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored"
+	ng-click="vm.onAddSet()">
+		<i class="material-icons">add</i>
+	</button>
+  </div>
+</div>
+
+

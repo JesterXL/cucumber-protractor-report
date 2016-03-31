@@ -1,0 +1,37 @@
+<style>
+
+.passed {
+	color: #00CC00;
+}
+.failed {
+	color: #CC0000;
+}
+</style>
+
+<h6>Scenarios</h6>
+
+<div ng-repeat="scenario in vm.feature.elements">
+	<span>
+		<h3>{{scenario.name}}</h3>
+		<!-- <jxl-progress percent="{{scenario.passedPercentage}}"></jxl-progress> -->
+	</span>
+	<table class="mdl-data-table mdl-js-data-table mdl-data-table mdl-shadow--2dp">
+	  <thead>
+	    <tr>
+	      <th class="mdl-data-table__cell--non-numeric">Passed</th>
+	      <th class="mdl-data-table__cell--non-numeric">Test</th>
+	      <!-- <th>Time</th> -->
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr ng-repeat="step in scenario.steps">
+	      <td class="mdl-data-table__cell--non-numeric">
+	      	<i ng-if="step.passed" class="material-icons passed">check circle</i>
+	      	<i ng-if="!step.passed" class="material-icons failed">error</i>
+	      </td>
+	      <td class="mdl-data-table__cell--non-numeric" alt="{{step.name}}"><b>{{step.keyword}}</b> {{step.name}}</td>
+	      <!-- <td>{{step.result.duration | testTimeFormatter}}</td> -->
+	    </tr>
+	  </tbody>
+	</table>
+</div>
