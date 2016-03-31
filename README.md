@@ -10,3 +10,7 @@ List all features with percentage of scenarios that pass.
 For each feature, showcases which steps pass / do not pass.
 
 ![Scenario](preview-2.png)
+
+## Installation
+
+`npm install cucumber-protractor-report`
