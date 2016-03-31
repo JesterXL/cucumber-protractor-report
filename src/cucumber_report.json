@@ -21,7 +21,7 @@
             "keyword": "When ",
             "result": {
               "status": "passed",
-              "duration": 648212052
+              "duration": 627694459
             },
             "match": {}
           },
@@ -31,7 +31,7 @@
             "keyword": "Then ",
             "result": {
               "status": "passed",
-              "duration": 298103439
+              "duration": 291687198
             },
             "match": {}
           },
@@ -40,8 +40,7 @@
             "line": 6,
             "keyword": "Then ",
             "result": {
-              "status": "passed",
-              "duration": 174227259
+              "status": "pending"
             },
             "match": {}
           }

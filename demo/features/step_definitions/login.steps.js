@@ -26,6 +26,8 @@ module.exports = function()
 
 	this.Then(/^I should see my workout$/, function (callback)
 	{
+		callback.pending();
+		return;
 		element.all(by.tagName('jxl-workout-card'))
 		.then((results)=>
 		{
