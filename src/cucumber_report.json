@@ -21,7 +21,7 @@
             "keyword": "When ",
             "result": {
               "status": "passed",
-              "duration": 613518167
+              "duration": 638274063
             },
             "match": {}
           },
@@ -31,7 +31,7 @@
             "keyword": "Then ",
             "result": {
               "status": "passed",
-              "duration": 292907006
+              "duration": 331495546
             },
             "match": {}
           },
@@ -40,8 +40,7 @@
             "line": 6,
             "keyword": "Then ",
             "result": {
-              "status": "passed",
-              "duration": 157819507
+              "status": "pending"
             },
             "match": {}
           }
@@ -61,7 +60,7 @@
             "keyword": "When ",
             "result": {
               "status": "passed",
-              "duration": 366863780
+              "duration": 393191412
             },
             "match": {}
           },
@@ -71,7 +70,7 @@
             "keyword": "Then ",
             "result": {
               "status": "passed",
-              "duration": 224484962
+              "duration": 242777929
             },
             "match": {}
           },
@@ -81,7 +80,7 @@
             "keyword": "Then ",
             "result": {
               "status": "passed",
-              "duration": 65567206
+              "duration": 61173706
             },
             "match": {}
           }
@@ -111,7 +110,7 @@
             "keyword": "When ",
             "result": {
               "status": "passed",
-              "duration": 497245309
+              "duration": 486442593
             },
             "match": {}
           },
@@ -121,7 +120,7 @@
             "keyword": "And ",
             "result": {
               "status": "passed",
-              "duration": 213656703
+              "duration": 193289397
             },
             "match": {}
           },
@@ -131,7 +130,7 @@
             "keyword": "Then ",
             "result": {
               "status": "passed",
-              "duration": 156120481
+              "duration": 199356429
             },
             "match": {}
           },
@@ -141,7 +140,7 @@
             "keyword": "And ",
             "result": {
               "status": "passed",
-              "duration": 131570590
+              "duration": 120945770
             },
             "match": {}
           },
@@ -151,7 +150,7 @@
             "keyword": "Then ",
             "result": {
               "status": "passed",
-              "duration": 61126437
+              "duration": 59680038
             },
             "match": {}
           }
