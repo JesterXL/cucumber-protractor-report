@@ -57,9 +57,34 @@ function clickLogin()
 	});
 }
 
+function hasErrorMessage()
+{
+	return new Promise((success, failure)=>
+	{
+		return element.all(by.tagName('h6'))
+		.filter((element, index)=>
+		{
+			return index === 0;
+		})
+		.getText()
+		.then((text)=>
+		{
+			if(text == "For now, please use username of 'test' and password of 'test'.")
+			{
+				success();
+			}
+			else
+			{
+				failure();
+			}
+		});
+	});
+}
+
 module.exports = {
 	setUsername: setUsername,
 	setPassword: setPassword,
 	clickLogin: clickLogin,
+	hasErrorMessage: hasErrorMessage,
 	go: go
 };

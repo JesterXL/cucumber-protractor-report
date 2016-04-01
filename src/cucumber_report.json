@@ -1,7 +1,7 @@
 [
   {
-    "id": "Login",
-    "name": "Login",
+    "id": "As-a-user-I-want-to-login-so-that-I-can-see-my-workouts-for-today.",
+    "name": "As a user I want to login so that I can see my workouts for today.",
     "description": "",
     "line": 1,
     "keyword": "Feature",
@@ -9,7 +9,7 @@
     "elements": [
       {
         "name": "test login works",
-        "id": "Login;test-login-works",
+        "id": "As-a-user-I-want-to-login-so-that-I-can-see-my-workouts-for-today.;test-login-works",
         "line": 3,
         "keyword": "Scenario",
         "description": "",
@@ -21,7 +21,7 @@
             "keyword": "When ",
             "result": {
               "status": "passed",
-              "duration": 627694459
+              "duration": 613518167
             },
             "match": {}
           },
@@ -31,7 +31,7 @@
             "keyword": "Then ",
             "result": {
               "status": "passed",
-              "duration": 291687198
+              "duration": 292907006
             },
             "match": {}
           },
@@ -40,7 +40,118 @@
             "line": 6,
             "keyword": "Then ",
             "result": {
-              "status": "pending"
+              "status": "passed",
+              "duration": 157819507
+            },
+            "match": {}
+          }
+        ]
+      },
+      {
+        "name": "cow login fails",
+        "id": "As-a-user-I-want-to-login-so-that-I-can-see-my-workouts-for-today.;cow-login-fails",
+        "line": 8,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "name": "I go to login",
+            "line": 9,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 366863780
+            },
+            "match": {}
+          },
+          {
+            "name": "I use \"cow\" as the username and \"cow\" as the password",
+            "line": 10,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 224484962
+            },
+            "match": {}
+          },
+          {
+            "name": "I should see a login failure message",
+            "line": 11,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 65567206
+            },
+            "match": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "As-a-user-I-want-to-record-my-reps-amount-and-weight-so-that-I-can-keep-track-of-my-powerlifting-progression.",
+    "name": "As a user I want to record my reps amount and weight so that I can keep track of my powerlifting progression.",
+    "description": "",
+    "line": 1,
+    "keyword": "Feature",
+    "uri": "/Users/jessewarden/Documents/_Projects/cucumber-protractor-report/demo/features/recordRepsAndWeight.feature",
+    "elements": [
+      {
+        "name": "record squat reps and weight",
+        "id": "As-a-user-I-want-to-record-my-reps-amount-and-weight-so-that-I-can-keep-track-of-my-powerlifting-progression.;record-squat-reps-and-weight",
+        "line": 3,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "name": "I go to my workout for today",
+            "line": 4,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 497245309
+            },
+            "match": {}
+          },
+          {
+            "name": "I choose squat",
+            "line": 5,
+            "keyword": "And ",
+            "result": {
+              "status": "passed",
+              "duration": 213656703
+            },
+            "match": {}
+          },
+          {
+            "name": "I can enter \"3\" reps",
+            "line": 6,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 156120481
+            },
+            "match": {}
+          },
+          {
+            "name": "I can enter \"380\" pounds",
+            "line": 7,
+            "keyword": "And ",
+            "result": {
+              "status": "passed",
+              "duration": 131570590
+            },
+            "match": {}
+          },
+          {
+            "name": "I can check completed",
+            "line": 8,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 61126437
             },
             "match": {}
           }

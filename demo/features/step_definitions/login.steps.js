@@ -26,15 +26,19 @@ module.exports = function()
 
 	this.Then(/^I should see my workout$/, function (callback)
 	{
-		callback.pending();
-		return;
+	//	callback.pending();
+	//	return;
 		element.all(by.tagName('jxl-workout-card'))
 		.then((results)=>
 		{
 			expect(results).to.have.lengthOf(3);
 			callback();
 		});
-		
+	});
+
+	this.Then(/^I should see a login failure message$/, function ()
+	{
+		return loginPage.hasErrorMessage();
 	});
 
 };
